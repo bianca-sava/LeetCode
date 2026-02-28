@@ -9,13 +9,11 @@ class Solution:
         head = res
         while list1 and list2:
             if list1.val < list2.val:
-                res.next = ListNode()
-                res.next.val = list1.val
+                res.next = list1
                 list1 = list1.next
                 res = res.next
             else:
-                res.next = ListNode()
-                res.next.val = list2.val
+                res.next= list2
                 list2 = list2.next
                 res = res.next
 
