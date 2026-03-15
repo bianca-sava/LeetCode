@@ -16,7 +16,7 @@ class Solution:
 
 
 
-    def getMinimumDifference(self, root: Optional[TreeNode]) -> int:
+    def getMinimumDifference(self, root: TreeNode) -> int:
         sorted = []
         self.sortInorder(root, sorted)
         minn = sorted[1].val-sorted[0].val
